@@ -1,0 +1,90 @@
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Titulo-->
+    <title>Administrador de Películas</title>
+     <!--aos-->
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+     <!--favicon-->
+     <link rel="icon" type="image/png" href="../assets/img/claqanim.png">
+     <!--animate-->
+     <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+     <!--css-->
+     <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <!--inicio de header-->
+    <header class="header">
+        <nav class="nav">
+          <ul class="list-nav">
+            <li class="animate__animated animate__wobble animate__repeat-2	2 icono-peliculas list-item-anclas">  
+             <a href="../index.html">
+              <img src="../assets/iconos/clapperboard-solid (1).svg" width="17px" alt="icono de codomovies" loading="lazy">
+              <span >CAC-Movies</span>
+             </a>
+           </li>
+          
+           <li class="list-item-anclas">
+              <a href="#tendencias">Tendencias</a>
+            </li>
+            <li class="list-item-anclas">
+              <a href="./registrarse.html" target="_blank">Registrarse</a>
+            </li>
+            <li class="list-item-anclas">
+              <a href="./login.html" target="_blank">Iniciar Sesion</a>
+            </li>
+          </ul>
+        </nav>
+    </header>
+      <!--fin de header-->  
+    <main>
+        <h1 class="title-login">Gestión de Películas</h1>
+            <section class="formulario-gestor-de-peliculas">
+                <div class="container-gestor">
+                    <input class="input-gestor" type="text" name="Título:"placeholder="Título">
+                    <label class="label-gestor"for="date">Fecha de lanzamiento:</label>
+                    <input class="input-date" type="date">
+                    <input class="input-gestor" type="text" name="Género:" id="" placeholder="Género:">
+                    <input class="input-gestor" type="text" name="Duración:" id=""placeholder="Duración:">
+                    <input class="input-gestor" type="text" name="Director:" id=""placeholder="Director:">
+                </div>
+                <div class="container-textarea">
+                 <textarea class="textarea" name="" id="" cols="" rows="">Reparto:</textarea>
+                 <textarea class="textarea" name="" id="" cols="" rows="">Sinopsis:</textarea>
+                </div>
+                <div class="container-gestor " id="file">
+                 <input class="input-gestor" type="file" name="file" id="">
+                </div>
+            </section>
+         
+
+    </main>  
+  <!--inicio de footer-->
+  <footer class="footer">
+    <nav class="nav-footer">
+     <ul class="list-footer">
+       <li class="list-item-anclas" >
+          <a href="#">Términos y Condiciones</a>
+        </li>  
+       <li class="list-item-anclas" >
+          <a href="#">Preguntas Frecuentes</a>  
+       </li>
+        <li class="list-item-anclas" >
+          <a href="#">Ayuda</a>
+        </li>
+        <li>
+        <a class="icono-arrow-up" href="../index.html">
+          <img src="../assets/iconos/iconizer-ei--arrow-up.svg" alt="flecha hacia arriba" width="60px" />
+         </a>
+       </li>
+     </ul>
+   </nav> 
+   </footer>
+      <!--fin de footer-->
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <script>
+        AOS.init();
+      </script>
+</body>
+</html>

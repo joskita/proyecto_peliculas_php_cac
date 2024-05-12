@@ -107,26 +107,10 @@ P {
   font-weight: 500;
   margin-top: var(--spacing-3);
 }
-/*Responsive font size para mobile*/
-@media screen and (max-width: 500px) {
-  h1{
-    font-size:var(--font-medium);
-    margin-top: var(--spacing-10);
-  }
-  h2{
-    margin-top: var(--spacing-20);
-    font-size: var(--font-small);
-}
-  p{
-    font-size: var(--font-xsmall);
-  }
-}
-
-  
-.container{
+ .container{
   max-width: 1200px;
   margin: 0 auto;
-}
+ }
 
 /*---------HEADER---------*/
 .header {
@@ -151,19 +135,7 @@ P {
           }
         }
       }
- /*-----------Querys de lista del nav para mobile------------*/
-@media screen and (max-width: 500px) {
-       .list-nav {
-         display: flex;
-         flex-direction: column;
-         align-items: center;
-         .icono-peliculas {
-          text-align: center;
-          color: white;
-          gap:var(--spacing-3);
-        }
-       } 
-      }  
+  
  /*-------list item header y footer*/
   .list-item-anclas{
     padding: var(--spacing-4) var(--spacing-10);
@@ -177,14 +149,7 @@ P {
       box-shadow: 0 0 15px rgba(112, 58, 201, 0.829);
       border-radius: 5px;}
     }
-/*----Querys de lista item del nav y footer para mobile------------*/           
-@media screen and (max-width: 500px) {
-  .list-item-anclas{
-    padding: var(--spacing-2) var(--spacing-5);
-    font-size:var(--font-xxxsmall);
-    margin: var(--spacing-1)var(--spacing-3);
-   }
-  }
+
   /*-------estilos index--------*/
 .main-container {
   margin: 0 auto;
@@ -214,16 +179,7 @@ P {
           background: var(--light-bg-solid)
         }
       }
-/*--------Querys seccion primaria index ----------*/
-  @media screen and (max-width: 500px) {
-    .seccion-primaria{
-      min-height: 75vh;
-       .input_registrarse {
-            padding: var(--spacing-2) var(--spacing-5);
-            font-size: var(--font-xsmall);
-          } 
-        } 
-      }    
+  
   /*----------seccion miniformulario index-----------*/
   .seccion-secundaria {
    margin: 0 auto;
@@ -260,26 +216,7 @@ P {
             }
           }
         }
-/*------------Querys seccion secundaria para mobile---------------*/
- @media screen and (max-width: 500px) {
-  .seccion-secundaria {
-    width: 100%;
-    padding: var(--spacing-5) var(--spacing-15);
-     .miniform-seccion-secundaria{
-           display: flex;
-           flex-direction: column;
-           align-items: center;
-          .input_textarea {
-               padding: var(--spacing-8)var(--spacing-40);
-             
-              }
-             .input_buscar {
-               font-size:var(--font-xxsmall) ;
-               padding:var(--spacing-3) var(--spacing-6);
-              } 
-            } 
-          } 
-        }
+
   /*----------seccion tendencias---------*/
 .seccion-tendencias{
   width: 100%;
@@ -343,15 +280,6 @@ P {
       }
     }
   }
-/*----Querys de botones para seccion tendencias para MOBILE--------------*/
-  @media screen and (max-width: 500px) {
-    .botones {
-     .boton {
-       font-size: var(--font-xxxsmall);
-       padding: var(--spacing-4) var(--spacing-8);
-      }
-    }
-  }
 /* ------------seccion  Aclamadas------------*/
 .seccion-aclamadas {
   width:100%;
@@ -373,16 +301,6 @@ P {
         }
       }
     }
-/*---------   Querys mobile seccion aclamadas-------------*/
-@media screen and (max-width: 500px) {
-  .seccion-aclamadas {
-    .list-peliculas-aclamadas {
-        .imagen-galeria {
-            width: 180px;
-    }
-   }
- }
-}
 /*----------Footer------------------*/
 .footer {
   position:absolute;
@@ -409,22 +327,6 @@ P {
           }
         }
       } 
-/*Querys para footer dispositivo Mobile*/ 
-@media screen and (max-width: 500px) {
- .footer {
-   .nav-footer{
-      margin: var(--spacing-8) auto;
-     .list-footer{
-        display: flex;
-        flex-direction: column;
-        align-items:center;
-         .icono-arrow-up{
-            position:initial;
-           }
-          }
-        }
-      } 
-    }         
 /*--------------ESTILOS DE LOGIN------------------*/
 .body-login{
  width: 100%;
@@ -432,7 +334,7 @@ P {
  background:linear-gradient(rgba(5,7,12,0.3),rgba(5,7,12,0.4)),
  url(../assets/img/banner--registe-moardo.jpg) no-repeat;
  background-size: cover;
- padding: var(--spacing-15) var(--spacing-60);
+ padding: var(--spacing-15) var(--spacing-5);
     .header-login{
        display: flex;
        justify-content: flex-start;
@@ -441,9 +343,9 @@ P {
        gap: var(--spacing-5);
        padding-bottom: var(--spacing-10);
     }
-.title-login, .title-registro {
+.title-login{
   margin-top:var(--spacing-40);
-  font-size: var(--font-large);
+  font-size: var(--font-medium);
   margin-bottom:var(--spacing-15);
 }
 .main-login {
@@ -499,42 +401,10 @@ P {
           }
         }
       }
-/*----------------Querys de login para mobile-------------------*/      
-@media screen and (max-width: 500px) {
-.body-login{
-   width: 100%;
-   padding: var(--spacing-5) var(--spacing-10);
-}
-.header-login{
-   margin-top: var(--spacing-10);
-}
-.title-login, .title-registro {
-   font-size: var(--font-xxsmall);
-}
-.main-login {
-   width: 100%;
-     .form-login {
-        .input-login {
-          padding: var(--spacing-5) var(--spacing-15);
-          font-size:var(--font-xxxsmall);
-         }
-       }
-.input-submit{
-   padding:var(--spacing-5) var(--spacing-30);
-   font-size:var(--font-small);
-   margin-bottom: var(--spacing-5);
-}
-.ancla-registro-login{
-  margin-top: var(--spacing-5);
-  font-size: var(--font-xxsmall);
-    }
-  }
-}
-
 /*------------estilos de registrarme-------------------*/
 .input-date{
   color: white;
-  padding: var(--spacing-3) var(--spacing-45);
+  padding: var(--spacing-3) var(--spacing-20);
   background-color:transparent; 
   border: 4px solid white;
   border-radius: 10px;
@@ -672,7 +542,194 @@ font-size: var(--font-xxsmall);
                  }
                 }
               }
-/*---Querys para mobile pagina detalle de pelicula----*/
+/*Gestor de Peliculas*/
+.formulario-gestor-de-peliculas{
+  width: 100%;
+  margin: 0 auto;
+  padding: var(--spacing-10);
+   .container-gestor{
+    width: 90%;
+      margin: var(--spacing-20) auto;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 20px;
+     .input-gestor{
+        border-radius: 10px;
+        padding: var(--spacing-5) var(--spacing-5);
+        border: 4px solid white;
+        font-size:20px;
+        background-color: transparent;
+        &:focus{
+          border: 2px solid rgba(98, 35, 180, 0.836);
+          background:rgba(115, 37, 240, 0.3);
+          outline: none;
+          box-shadow: 0 0 20px rgba(112, 58, 201, 0.729);
+        } 
+      }
+    }
+     .label-gestor{
+      font-size: var(--font-xxsmall);
+      color: white;
+    }
+    .container-textarea{
+      width: 90%;
+      gap: var(--spacing-20);
+      margin:var(--spacing-20) auto;
+      display: flex;
+      flex-direction: column;
+      align-items:start;
+        .textarea{
+         display: block;
+         width: 80vw;
+         height: 15vh;
+         background-color: transparent;
+         color: white;
+         border-radius: 10px;
+         padding: 4px 10px;
+         font-size: var(--font-xxsmall);
+         border: 4px solid white;
+        &:focus{
+          border: 2px solid rgba(98, 35, 180, 0.836);
+          background:rgba(115, 37, 240, 0.3);
+          outline: none;
+          box-shadow: 0 0 20px rgba(112, 58, 201, 0.729);
+        }
+      }
+    }
+   }
+/*Responsive font size para mobile*/
+@media screen and (max-width: 500px) {
+  h1{
+    font-size:var(--font-medium);
+    margin-top: var(--spacing-10);
+  }
+  h2{
+    margin-top: var(--spacing-20);
+    font-size: var(--font-small);
+}
+  p{
+    font-size: var(--font-xsmall);
+  }
+}
+/*-----------Querys de lista del nav para mobile------------*/
+@media screen and (max-width: 500px) {
+  .list-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .icono-peliculas {
+     text-align: center;
+     color: white;
+     gap:var(--spacing-3);
+   }
+  } 
+ } 
+/*----Querys de lista item del nav y footer para mobile------------*/           
+@media screen and (max-width: 500px) {
+  .list-item-anclas{
+    padding: var(--spacing-2) var(--spacing-5);
+    font-size:var(--font-xxxsmall);
+    margin: var(--spacing-1)var(--spacing-3);
+   }
+  }
+ /*--------Querys seccion primaria index ----------*/
+ @media screen and (max-width: 500px) {
+  .seccion-primaria{
+    min-height: 75vh;
+     .input_registrarse {
+          padding: var(--spacing-2) var(--spacing-5);
+          font-size: var(--font-xsmall);
+        } 
+      } 
+    }  
+ /*------------Querys seccion secundaria para mobile---------------*/
+ @media screen and (max-width: 500px) {
+  .seccion-secundaria {
+    width: 100%;
+    padding: var(--spacing-5) var(--spacing-15);
+     .miniform-seccion-secundaria{
+           display: flex;
+           flex-direction: column;
+           align-items: center;
+          .input_textarea {
+               padding: var(--spacing-8)var(--spacing-40);
+             
+              }
+             .input_buscar {
+               font-size:var(--font-xxsmall) ;
+               padding:var(--spacing-3) var(--spacing-6);
+              } 
+            } 
+          } 
+        } 
+ /*----Querys de botones para seccion tendencias para MOBILE--------------*/
+ @media screen and (max-width: 500px) {
+  .botones {
+   .boton {
+     font-size: var(--font-xxxsmall);
+     padding: var(--spacing-4) var(--spacing-8);
+    }
+  }
+}
+/*---------   Querys mobile seccion aclamadas-------------*/
+@media screen and (max-width: 500px) {
+  .seccion-aclamadas {
+    .list-peliculas-aclamadas {
+        .imagen-galeria {
+            width: 180px;
+    }
+   }
+ }
+} 
+/*Querys para footer dispositivo Mobile*/ 
+@media screen and (max-width: 500px) {
+  .footer {
+    .nav-footer{
+       margin: var(--spacing-8) auto;
+      .list-footer{
+         display: flex;
+         flex-direction: column;
+         align-items:center;
+          .icono-arrow-up{
+             position:initial;
+            }
+           }
+         }
+       } 
+     } 
+ /*----------------Querys de login para mobile-------------------*/      
+@media screen and (max-width: 500px) {
+  .body-login{
+     width: 100%;
+     padding: var(--spacing-5);
+  }
+  .header-login{
+     margin-top: var(--spacing-10);
+  }
+  .title-login, .title-registro{
+     font-size: var(--font-small);
+  }
+  .main-login {
+     width: 100%;
+       .form-login {
+          .input-login {
+            padding: var(--spacing-5) var(--spacing-15);
+            font-size:var(--font-xxxsmall);
+           }
+         }
+  .input-submit{
+     padding:var(--spacing-5) var(--spacing-30);
+     font-size:var(--font-small);
+     margin-bottom: var(--spacing-5);
+  }
+  .ancla-registro-login{
+    margin-top: var(--spacing-5);
+    font-size: var(--font-xxsmall);
+      }
+    }
+  }
+ /*---Querys para mobile pagina detalle de pelicula----*/
 @media screen and (max-width: 500px) {
   .body-detalle{
     background-image: linear-gradient(
@@ -726,5 +783,5 @@ font-size: var(--font-xxsmall);
               background-color: rgba(246, 243, 247, 0.938);
             }  
           }
-        }
+        }                 
 /*----------fin-------------*/
