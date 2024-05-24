@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--titulo-->
-    <title>Registrarse |Codoflix</title>
+    <title>Registrarse </title>
     <!--aos-->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!--favicon-->
-    <link rel="icon" type="image/png" href="./assets/img/claqanim.png">
+    <link rel="icon" type="image/png" href="../assets/img/claqanim.png">
     <!--animate-->
     <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <!--css-->
@@ -43,22 +43,27 @@
         <input class="input-date" type="date" name="date" id=""required>
       </div>
       <div >
-        <label class="label-ingrese-pais" for="">Ingrese Pais:</label>
-        <select class="select-pais" name="Ingrese Pais" id="Pais">
-          <option value="" selected></option>
-          <option value="Argentina" selected>Argentina</option>
-          <option value="brasil">brasil</option>
-          <option value="peru">peru</option>
-          <option value="uruguay">uruguay</option>
-          <option value="colombia">colombia</option>
-          <option value="ecuador">ecuador</option>
-          <option value="paraguay">paraguay</option>
-          <option value="venezuela">venezuela</option>
+        <select class="select-pais" name="Ingrese Pais" id="pais">
+          <option value="">País :</option>
+          <option value="Argentina">Argentina</option>
+          <option value="brasil">Bolivia</option>
+          <option value="brasil">Brasil</option>
+          <option value="colombia">Colombia</option>
+          <option value="ecuador">Ecuador</option>
+          <option value="brasil">El Salvador</option>
+          <option value="paraguay">Paraguay</option>
+          <option value="peru">Peru</option>
+          <option value="brasil">República Dominicana</option>
+          <option value="uruguay">Uruguay</option>
+          <option value="venezuela">Venezuela</option>
         </select>
+  
       </div>
       <div class="label-checkbox">
+         <label  for="checkbox">
          <input type="checkbox" name="Términos" id="checkbox">
-          <label  for="checkbox"> Acepto Términos y Condiciones</label>
+           Acepto Términos y Condiciones
+         </label>
       </div>
       <div >
           <input class="input-registrarme" type="submit" value="Registrarme">
@@ -73,5 +78,6 @@
 <script>
   AOS.init();
 </script>
+<script src="../js/formRegister.js"></script>
 </body>
 </html>

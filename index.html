@@ -58,64 +58,16 @@
         </form>
       </section>
       <hr />
+     
       <!--seccion 3-->
-      <section id="tendencias" class="seccion-tendencias">
-        <h2>Las Tendencias de Hoy</h2>
-        <div class="container-peliculas">
-          <a class="anclas-peliculas" href="./pages/detalle.html">
-           <img class="img-peliculas" src="./assets/img/luka.jpeg" alt="">
-           <h4 class="titulo-pelicula">Luca</h4>
-          </a>
-          <a class="anclas-peliculas" href="./pages/detalle.html">
-           <img class="img-peliculas" src="./assets/img/shrek.jpg" alt="">
-           <h4 class="titulo-pelicula">Shrek</h4>
-          </a>
-          <a class="anclas-peliculas" href="./pages/detalle.html">
-           <img class="img-peliculas" src="./assets/img/elemental.jpg" alt="">
-           <h4 class="titulo-pelicula">Elemental</h4>
-          </a>
-          </a>
-            <a class="anclas-peliculas" href="./pages/detalle.html">
-             <img class="img-peliculas" src="./assets/img/grinch.jpg" alt="">
-             <h4 class="titulo-pelicula">El Grinch</h4>
-            </a>
-            <a class="anclas-peliculas" href="./pages/detalle.html">
-             <img class="img-peliculas" src="./assets/img/la-sirenita.jpg" alt="">
-             <h4 class="titulo-pelicula">La sirenita</h4>
-            </a>
-            <a class="anclas-peliculas" href="./pages/detalle.html">
-              <img class="img-peliculas" src="./assets/img/Super-Mario-Bros-la-pelicula-.jpg" alt="super mario bros">
-              <h4 class="titulo-pelicula">Super Mario Bros</h4>
-             </a>
-             <a class="anclas-peliculas" href="./pages/detalle.html">
-              <img class="img-peliculas" src="./assets/img/los-increibles.jpg" alt="Los increibles">
-              <h4 class="titulo-pelicula">Los Increibles</h4>
-             </a>
-             <a class="anclas-peliculas" href="./pages/detalle.html">
-              <img class="img-peliculas" src="./assets/img/moana.webp" alt="Moana" >
-              <h4 class="titulo-pelicula">Moana</h4>
-             </a>
-             <a class="anclas-peliculas" href="./pages/detalle.html">
-              <img class="img-peliculas" src="./assets/img/reyleon.jpg" alt="rey leon" >
-              <h4 class="titulo-pelicula">El Rey Leon</h4>
-             </a>
-             <a class="anclas-peliculas" href="./pages/detalle.html">
-              <img class="img-peliculas" src="./assets/img/zootropolis.jpeg" alt="Zootropolis" >
-              <h4 class="titulo-pelicula">Zootropolis</h4>
-             </a>
-             <a class="anclas-peliculas" href="./pages/detalle.html">
-              <img class="img-peliculas" src="./assets/img/La-Dama-Y-El-Vagabundo.jpg" alt="La Dama y el vagabundo" >
-              <h4 class="titulo-pelicula">La Dama y El Vagabundo</h4>
-             </a>
-             <a class="anclas-peliculas" href="./pages/detalle.html">
-              <img class="img-peliculas" src="./assets/img/spiderman.webp" alt="spiderman" >
-              <h4 class="titulo-pelicula">Spiderman</h4>
-             </a>
-        </div>
+     <section id="tendencias" class="seccion-tendencias">
+      <h2>Las Tendencias de Hoy</h2>
+        <div class="container-peliculas" id="contenedor"></div>
+     
         <div class="botones" >
-        <button class=" boton">Anterior</button>
-        <button  class=" boton">Siguiente</button>
-       </div>
+          <button id="btn-anterior" class=" boton">Anterior</button>
+          <button id="btn-siguiente" class=" boton">Siguiente</button>
+        </div>
       </section>
      <hr>
       <!--seccion 4-->
@@ -214,6 +166,7 @@
     <script>
       AOS.init();
     </script>
+    <script src="./js/cargarPelis.js"></script>
   </body>
  
 </html>

@@ -250,8 +250,10 @@ P {
   box-shadow: 10px 0 40px rgba(187, 59, 187, 0.849);
   }   
 .titulo-pelicula{
+  margin-top: var(--spacing-10);
   text-align: center;
   font-size: var(--font-xxxsmall);
+  color: white;
   &:hover{
     border-radius: 5px;
     background-color: var(--light-bg-solid);
@@ -404,7 +406,7 @@ P {
 /*------------estilos de registrarme-------------------*/
 .input-date{
   color: white;
-  padding: var(--spacing-3) var(--spacing-20);
+  padding: var(--spacing-3) var(--spacing-45);
   background-color:transparent; 
   border: 4px solid white;
   border-radius: 10px;
@@ -416,7 +418,7 @@ P {
     box-shadow: 0 0 20px rgba(112, 58, 201, 0.729);
   }
 }
-.label-ingrese-pais, .label-checkbox {
+.label-checkbox {
   display: inline-block;
   font-size: var(--font-xxsmall);
   color: white;
@@ -426,11 +428,14 @@ P {
 }
 .select-pais,.input-registrarme{
 display: inline-block;
-padding: var(--spacing-2) var(--spacing-7);
+padding: var(--spacing-4) var(--spacing-30);
+margin-right: 2px;
 border: 4px solid white;
 border-radius: 10px;
 cursor: pointer;
 font-size: var(--font-xxsmall);
+background-color:var(--light-bg-solid);
+color: white;
 }
 .input-registrarme{
  padding: var(--spacing-5)var(--spacing-60); 
