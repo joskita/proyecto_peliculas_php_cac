@@ -788,5 +788,21 @@ color: white;
               background-color: rgba(246, 243, 247, 0.938);
             }  
           }
-        }                 
+        }    
+        
+#tarjeta-clima{
+  width: 50%;
+  height: 85vh;
+  margin: 0 auto;
+ margin-top: 20px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #735fe7;
+  border-radius: 10px;
+
+} 
+
+  
+
 /*----------fin-------------*/

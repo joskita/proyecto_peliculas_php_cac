@@ -16,7 +16,7 @@
 </head>
 <body class="body-login">
   <header class="animate__animated animate__shakeX header-login" >
-    <a  href="/">
+    <a  href="../index.html">
       <img src="../assets/iconos/clapperboard-solid (1).svg" alt="Logo Codomovies" width="20" loading="lazy">
       <span class="span-icon">CAC-Movies</span>
     </a> 
@@ -25,25 +25,25 @@
   <main class="main-login" >
    
     <h1 class="title-login"> Registrarme</h1>
-    <form class="form-login" action="validar.php" method="post">
+    <form id="formRegistro" class="form-login" action="validar.php" method="get">
 
       <div>
-        <input  class="input-login" type="text" name="NOMBRE" id="name" placeholder="NOMBRE" required>
+        <input  class="input-login" type="text" name="NOMBRE" id="nombre" placeholder="NOMBRE"required>
       </div> 
       <div>
-        <input class="input-login" type="text"name="APELLIDO" placeholder="APELLIDO" required>
+        <input class="input-login" type="text"name="APELLIDO" id="apellido" placeholder="APELLIDO"required>
       </div>
       <div>
-        <input class="input-login" type="email" name="EMAIL" id="" placeholder="EMAIL" required>
+        <input class="input-login" type="email" name="EMAIL" id="email" placeholder="EMAIL"required>
       </div> 
       <div>
-        <input class="input-login" type="password" name="password" id="" placeholder="CONTRASEÑA" required>
+        <input class="input-login" type="password" name="password" id="password" placeholder="CONTRASEÑA"required>
       </div>
       <div>
-        <input class="input-date" type="date" name="date" id=""required>
+        <input class="input-date" type="date" name="date" id="date"required>
       </div>
       <div >
-        <select class="select-pais" name="Ingrese Pais" id="pais">
+        <select class="select-pais" name="Ingrese Pais" id="pais"required>
           <option value="">País :</option>
           <option value="Argentina">Argentina</option>
           <option value="brasil">Bolivia</option>
@@ -60,24 +60,26 @@
   
       </div>
       <div class="label-checkbox">
-         <label  for="checkbox">
-         <input type="checkbox" name="Términos" id="checkbox">
+         <label  for="checkbox" >
+         <input type="checkbox" name="Términos" id="checkbox"required>
            Acepto Términos y Condiciones
          </label>
       </div>
       <div >
-          <input class="input-registrarme" type="submit" value="Registrarme">
+          <input id="registrarme" class="input-registrarme" type="submit" value="Registrarme">
       </div>
-    </form>
       <div>
         <a class="ancla-registro-login" href="#">¿Necesitas ayuda?</a>
       </div>
+    </form>
+      <div id="error"></div>
   </main>
 <!--fin de la seccion principal de la web-->
+<script src="../js/formRegister.js"></script>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 <script>
   AOS.init();
 </script>
-<script src="../js/formRegister.js"></script>
+
 </body>
 </html>
