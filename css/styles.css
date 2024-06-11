@@ -547,7 +547,7 @@ color: white;
                  }
                 }
               }
-/*Gestor de Peliculas*/
+/*Administrador de Peliculas*/
 .formulario-gestor-de-peliculas{
   width: 100%;
   margin: 0 auto;
@@ -586,7 +586,7 @@ color: white;
       align-items:start;
         .textarea{
          display: block;
-         width: 80vw;
+         width: 56vw;
          height: 15vh;
          background-color: transparent;
          color: white;
@@ -603,6 +603,53 @@ color: white;
       }
     }
    }
+   .input-submit{
+    background:var(--light-bg-solid);
+    border: 4px solid white;
+    border-radius: 10px;
+    padding: var(--spacing-5) var(--spacing-20);
+    font-size: var(--font-xsmall);
+    cursor:default;
+    color: white;
+    margin-left: 50px;
+    margin-bottom: var(--spacing-10);
+  }
+  .listado-de-pelis{
+    font-size:16px;
+  }
+  .tabla-modificadora{
+display: flex;
+justify-content: center;
+align-items:first baseline;
+color: white;
+padding: 2em ;
+gap: 20px;
+
+  }
+  .titulo, .genero{
+  padding: 10px;
+  text-align: start;
+  margin-top: 0;
+  }
+ .img-listado-peliculas{
+  margin-left: 100px;
+  width: 30%;
+  border-radius: 10px;
+
+ } 
+ .input-modificar, .input-eliminar{
+ display: inline-block;
+ height: 30px;
+ width: 70px;
+ background-color: rgba(255, 238, 0, 0.959);
+ text-align: center;
+ border-radius: 4px solid white;
+ margin-right: 20px;
+ }
+ .input-eliminar{
+  background-color: red;
+ }
+
 /*Responsive font size para mobile*/
 @media screen and (max-width: 500px) {
   h1{
