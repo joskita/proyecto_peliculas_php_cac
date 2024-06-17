@@ -117,7 +117,7 @@ $peliculas = $conn->query("SELECT * FROM peliculas");
                         <img class="img-listado-peliculas" src="<?php echo $row['imagen']; ?>" width="100">
                     </td>
                     <td>
-                        <a href="editPelis.php?id=<?php echo $row['id']; ?>"><input class="input-modificar" type="button" value="Modificar"></a>
+                        <a href="editPelis.php?id=<?php echo $row['id']; ?>"><input class="input-modificar" type="button" value="Modificar"></a><br><br>
                         <a href="adminPelis.php?delete=<?php echo $row['id']; ?>"><input class="input-eliminar" type="button" value="Eliminar"></a>
                     </td>
                 </tr>
