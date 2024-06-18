@@ -62,7 +62,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             <h1>Películas y Series ilimitadas en un solo lugar</h1>
             <p>Disfrutá donde quieras.</p>
             <p>Cancelá en cualquier momento.</p>
-            <input class="input_registrarse" type="button" value="Registrarse" />
+            <input class="input_registrarse" type="button" value="Registrarse" onclick="window.location.href='registrarse.html'" />
         </section>
         <section class="seccion-secundaria">
             <h2>¿Qué estás buscando para ver?</h2>

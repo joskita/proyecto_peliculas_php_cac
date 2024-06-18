@@ -39,11 +39,28 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     <!--favicon-->
     <link rel="icon" type="image/png" href="assets/img/claqanim.png">
     <!--animate-->
+  
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <!--css-->
     <link rel="stylesheet" href="css/styles.css">
     <!-- Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+      <style>
+        .header a,
+        .footer a {
+            color: white;
+        }
+
+        .header a:hover,
+        .footer a:hover {
+            color: #ddd; /* Optional: lighter color on hover */
+        }
+
+        .header, .footer {
+            background-color: #333; /* Ensure contrast with white text */
+        }
+    </style>
+
 </head>
 <body>
     
