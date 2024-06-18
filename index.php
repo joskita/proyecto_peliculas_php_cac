@@ -81,11 +81,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                             <div class="pelicula">
                                 <a href="detalle.php?id=<?php echo $pelicula['id']; ?>">
                                     <img src="<?php echo $pelicula['imagen']; ?>" alt="<?php echo $pelicula['titulo']; ?>">
-                                    <h4 class="tend"><?php echo $pelicula['titulo']; ?></h4>
+                                    <h2 class="tend"><?php echo $pelicula['titulo']; ?></h2>
                                 </a>
-                                <p>Género: <?php echo $pelicula['genero']; ?></p>
-                                <p>Duración: <?php echo $pelicula['duracion']; ?></p>
-                                <p>Sinopsis: <?php echo $pelicula['sinopsis']; ?></p>
+                                <h4>Género: <?php echo $pelicula['genero']; ?></h4>
+                                <h4>Duración: <?php echo $pelicula['duracion']; ?></h4>
+                                <h4>Sinopsis: <?php echo $pelicula['sinopsis']; ?></h4>
                             </div>
                         <?php endforeach; ?>
                     <?php else: ?>
