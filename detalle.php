@@ -45,6 +45,9 @@ if (isset($_GET['id'])) {
         .detalle-pelicula .info {
             max-width: 600px;
         }
+        h3{
+            color:white;
+        }
     </style>
 </head>
 <body class="container">
@@ -78,9 +81,9 @@ if (isset($_GET['id'])) {
             <img src="<?php echo htmlspecialchars($pelicula['imagen']); ?>" alt="<?php echo htmlspecialchars($pelicula['titulo']); ?>">
             <div class="info">
                 <h1><?php echo htmlspecialchars($pelicula['titulo']); ?></h1>
-                <p><strong>Género:</strong> <?php echo htmlspecialchars($pelicula['genero']); ?></p>
-                <p><strong>Duración:</strong> <?php echo htmlspecialchars($pelicula['duracion']); ?></p>
-                <p><strong>Sinopsis:</strong> <?php echo htmlspecialchars($pelicula['sinopsis']); ?></p>
+                <h3><strong>Género:</strong> <?php echo htmlspecialchars($pelicula['genero']); ?></h3>
+                <h3><strong>Duración:</strong> <?php echo htmlspecialchars($pelicula['duracion']); ?></h3>
+                <h3><strong>Sinopsis:</strong> <?php echo htmlspecialchars($pelicula['sinopsis']); ?></h3>
             </div>
         </section>
     </main>
