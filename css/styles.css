@@ -564,6 +564,7 @@ color: white;
         padding: var(--spacing-5) var(--spacing-5);
         border: 4px solid white;
         font-size:20px;
+        color: white;
         background-color: transparent;
         &:focus{
           border: 2px solid rgba(98, 35, 180, 0.836);
@@ -850,6 +851,70 @@ gap: 20px;
 
 } 
 
+.btn-modificar {
+  background-color: yellow;
+  color: black;
+  font-size: 14px; /* Ajusta el tamaño de la fuente según tus necesidades */
+  padding: 8px 12px; /* Ajusta el padding según tus necesidades */
+  border: none;
+  cursor: pointer;
+}
+
+.btn-eliminar {
+  background-color: red;
+  color: white;
+  font-size: 14px; /* Ajusta el tamaño de la fuente según tus necesidades */
+  padding: 8px 12px; /* Ajusta el padding según tus necesidades */
+  border: none;
+  cursor: pointer;
+}
+/* Estilos específicos para la página de edición de película */
+.main-editar-pelicula {
+  padding: 20px;
+  margin-left: 20px; /* Añadir margen desde la izquierda */
+}
+
+.main-editar-pelicula h1 {
+  color: #ad9191;
   
+}
+
+.main-editar-pelicula form {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.main-editar-pelicula form h4 {
+  font-size: 18px; /* Ajustar tamaño de letra */
+  color: #333; /* Letra en blanco */
+}
+
+.main-editar-pelicula form input[type="text"], 
+.main-editar-pelicula form textarea, 
+.main-editar-pelicula form input[type="file"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.main-editar-pelicula form button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 18px; /* Ajustar tamaño de letra */
+}
+
+.main-editar-pelicula form button:hover {
+  background-color: #218838;
+}
 
 /*----------fin-------------*/
